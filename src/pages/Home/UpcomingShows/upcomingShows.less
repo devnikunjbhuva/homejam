@@ -1,0 +1,58 @@
+.upcoming-shows-container {
+    .view-action {
+        color: @yellow;
+    }
+
+    .upcoming-shows-wrapper {
+        margin-top: 20px;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        overflow: auto;
+        .upcoming-show-card {
+            width: 250px;
+            margin-right: 20px;
+            border-radius: 8px;
+            box-shadow: 8px -8px 2px 0 #301A68, 8px -8px 2px 0 #234C97;
+
+            .upcoming-show-details {
+                padding: 25px 15px;
+                .upcoming-show-badge {
+                    background: @yellow;
+                    color: #682F26;
+                    padding: 2px 4px;
+                    font-weight: 600;
+                    width: fit-content;
+                }
+                .upcoming-show-title {
+                    font-weight: bold;
+                    font-size: 20px;
+                    line-height: 32px;
+                    margin-top: 10px;
+                    margin-bottom: 15px;
+                }
+                .upcoming-show-actions {
+                    display: flex;
+                    align-items: center;
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 32px;
+                    justify-content: space-between;
+                    .upcoming-show-more-info {
+                        font-weight: 600;
+                        font-size: 16px;
+                        color: @blue;
+                        display: flex;
+                        align-items: center;
+                        svg {
+                            margin-left: 10px;
+                        }
+                    }
+                    .upcoming-show-ticket {
+                        border-left: 1px solid rgba(255,255,255,0.1);
+                    }
+                }
+            }
+        }
+    }
+}

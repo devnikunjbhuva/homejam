@@ -1,0 +1,22 @@
+.custom-progress {
+  .ant-progress-inner {
+    width: 200px !important;
+    height: 200px !important;
+    .ant-progress-circle-trail {
+      opacity: 0.2;
+    }
+    .ant-progress-circle-path {
+      stroke: @pink !important;
+    }
+    .ant-progress-text {
+      color: @white;
+    }
+  } 
+
+  @media (max-width: 425px) {
+    .ant-progress-inner {
+      width: 145px !important;
+      height: 145px !important;
+    }
+  }
+}
